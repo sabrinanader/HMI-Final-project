@@ -1,123 +1,109 @@
-# HMI-Final-project
-
-
-Here's a more polished and visually appealing version of your README with emojis and clear section separation:
-
-```markdown
-# 🎵 Digital Musical Instruments 🎹
-
-A Python application built with PyQt5 that simulates various musical instruments and provides interactive music experiences.
 
 ---
 
-## ✨ Features
+# 🎹 PyQt5 Music Instrument App
 
-### 🎼 Multiple Instruments
-- **Piano** 🎹 with adjustable octaves (1-3)
-- **Xylophone** 🎼 with colorful keys
-- **Video Game** 🎮 sound effects with character images
-- **Karaoke Challenge** 🎤 mode with scoring
-
-### 🎛 Interactive Features
-- Play notes by clicking on virtual instruments 🖱️
-- Record and save your musical creations ⏺️
-- Load and play pre-made scores 📂
-- Karaoke mode with scoring system 🏆
-
-### 🖥 User Interface
-- Clean, intuitive interface with toolbars and menus 🧰
-- Visual feedback when playing notes 💡
-- Keyboard shortcuts for common actions ⌨️
+This is a multi-instrument desktop application built using **PyQt5**. It allows users to play sounds from a **piano**, **xylophone**, **video game soundboard**, and even includes a **karaoke player**. The app also supports **recording and saving** sequences of notes.
 
 ---
 
-## 📦 Requirements
+## 🚀 Features
 
-- Python 3.6+
-- PyQt5
-- QtMultimedia
+* 🎼 **Instruments Supported**:
+
+  * Piano (Do, Ré, Mi, Fa, Sol, La, Si)
+  * Xylophone
+  * Retro Video Game Soundboard
+* 🎤 **Karaoke Player**: Play a background audio track with lyrics displayed.
+* 🎧 **Sound Playback** using Qt Multimedia.
+* 💾 **Record Mode**: Save the sequence of notes you play to a file.
+* 🛠️ **Toolbar**:
+
+  * Open, Save, Quit
+  * Switch instruments
+  * Change piano octave range (1–3)
+
+---
+
+---
+
+## 🛠 Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/pyqt5-music-app.git
+   cd pyqt5-music-app
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   pip install PyQt5
+   ```
+
+3. **Directory Structure**:
+   Make sure your project folder includes the following:
+
+   ```
+   sounds/
+   ├── do.wav
+   ├── re.wav
+   ├── ...
+   ├── karaoke.mp3
+   ```
+
+   Ensure that all `.wav` and `.mp3` files are properly placed in the `sounds/` directory.
+
+---
+
+## ▶️ Running the App
+
+Run the application with:
 
 ```bash
-pip install PyQt5
+python main.py
 ```
 
----
-
-## 🚀 Installation & Usage
-
-1. Clone or download the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```bash
-   python main.py
-   ```
+*(Replace `main.py` with the actual file name of the script.)*
 
 ---
 
-## 🔥 Hotkeys
+## 🎹 Controls
 
-| Shortcut | Action            |
-|----------|-------------------|
-| Ctrl+O   | Open score file   |
-| Ctrl+S   | Start recording   |
-| Ctrl+T   | Stop recording    |
-| Ctrl+Q   | Quit application  |
+* Click instrument buttons to play notes.
+* Use the toolbar to:
 
----
-
-## 📂 File Structure
-
-```
-📁 Digital_Musical_Instruments/
-├── 📁 sounds/          # All audio files
-├── 📁 images/          # Image assets
-├── 📄 main.py          # Main application
-└── 📄 README.md        # This file
-```
+  * Switch instruments
+  * Start/Stop recording
+  * Open a saved note sequence
+* Adjust octaves with the spin box (for piano).
 
 ---
 
-## 🎨 Customization
+## 🗂 File Types
 
-### Add your own:
-- 🎶 Sound files to `sounds/`
-- 🖼️ Image files to `images/`
-- 🎤 Karaoke songs by editing the `KARAOKE_SONGS` dictionary
+* **.txt** — Used to store sequences of notes in plain text, one per line.
+* **.mp3** — Used in karaoke mode for background playback.
 
 ---
 
-## 🛠 Troubleshooting
+## 🧩 Dependencies
 
-🔊 **If sounds don't play:**
-- Verify sound files exist in `sounds/`
-- Check file paths in the code match your structure
-- Ensure audio drivers are working properly
+* [PyQt5](https://pypi.org/project/PyQt5/)
+* Python 3.7+
 
 ---
 
-## 📜 License
+## 💡 TODO / Improvements
 
-MIT License - Feel free to use and modify!
+* Add MIDI export
+* Visual feedback on notes
+* Keyboard mapping for notes
+* Volume control
 
 ---
 
-## 👨‍💻 Author
 
-[Your Name]  
-📧 YourEmail@example.com  
-🌐 [YourWebsite.com](https://yourwebsite.com)
 
-```
-
-This version includes:
-- 🎵 Music-related emojis for visual appeal
-- Clear section separation with lines (---)
-- Better formatting with tables for shortcuts
-- ASCII directory tree for file structure
-- More organized troubleshooting section
-- Consistent emoji usage throughout
-
-Would you like me to add anything else or modify any section further? 😊
+---
